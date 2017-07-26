@@ -1,0 +1,40 @@
+<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
+    <ul class="list-group">
+        <!--<div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('pages')">
+                <span><i class="fa fa-plus"></i>&nbsp; {{ 'menu' | translate }}</span>
+            </a>
+            <li class="nested" [class.expand]="showMenu === 'pages'">
+                <ul class="submenu">
+                    <li>
+                        <a href="javascript:void(0)"><span>{{ 'submenu' | translate }}</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span>{{ 'submenu' | translate }}</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span>{{ 'submenu' | translate }}</span></a>
+                    </li>
+                </ul>
+            </li>
+        </div>-->
+        <a [routerLink]="['/group-conf']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;{{ 'menus.GroupConfiguration' | translate }}
+        </a>
+        <a [routerLink]="['/plant-conf']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-bar-chart-o"></i>&nbsp;{{ 'menus.PlantConfiguration' | translate }}
+        </a>
+        <a [routerLink]="['/asset-conf']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-table"></i>&nbsp;{{ 'menus.AssetConfiguration' | translate }}
+        </a>
+        <a [routerLink]="['/map-conf']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-edit"></i>&nbsp;{{ 'menus.MapConfiguration' | translate }}
+        </a>
+        <a [routerLink]="['/element-conf']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-desktop"></i>&nbsp;{{ 'menus.ElementConfiguration' | translate }}
+        </a>
+        <a [routerLink]="['/user-conf']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-wrench"></i>&nbsp;{{ 'menus.UserConfiguration' | translate }}
+        </a>
+    </ul>
+</nav>
